@@ -1171,36 +1171,28 @@ Facts Style
   color: #5e4dc5;
 }
 
-/* ✅ Responsive Design */
+
 @media (max-width: 768px) {
   .fun-facts {
-    padding: 60px 20px 40px 20px;
-  }
-
-  .fun-facts:before {
-    width: 100%;
-    border-radius: 0;
-  }
-
-  .fun-facts:after {
-    display: none;
+    padding: 60px 15px 40px 15px;
   }
 
   .fun-facts .section-heading h6 {
     font-size: 14px;
-    color: #fff;
+    margin-bottom: 10px;
   }
 
   .fun-facts .section-heading h2 {
-    font-size: 20px;
+    font-size: 22px;
     line-height: 1.4;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .fun-facts .section-heading p {
     font-size: 14px;
     line-height: 1.6;
     padding: 0 5px;
+    margin-bottom: 10px;
   }
 
   .apply-button {
@@ -1208,12 +1200,13 @@ Facts Style
   }
 
   .apply-button a {
+    padding: 10px 0;
+    font-size: 14px;
     width: 100%;
     text-align: center;
-    padding: 10px 0;
-    font-size: 15px;
   }
 }
+
 
 
 .breakthrough-moment {
