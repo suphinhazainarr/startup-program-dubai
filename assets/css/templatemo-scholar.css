@@ -1120,7 +1120,6 @@ Courses Style
 Facts Style
 --------------------------------------------- 
 */
-
 .fun-facts {
   position: relative;
   padding: 80px 0 60px 0;
@@ -1164,12 +1163,58 @@ Facts Style
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+  display: inline-block;
 }
 
 .apply-button a:hover {
   background-color: #f1f0fe;
   color: #5e4dc5;
 }
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .fun-facts {
+    padding: 60px 20px 40px 20px;
+  }
+
+  .fun-facts:before {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .fun-facts:after {
+    display: none;
+  }
+
+  .fun-facts .section-heading h6 {
+    font-size: 14px;
+    color: #fff;
+  }
+
+  .fun-facts .section-heading h2 {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+
+  .fun-facts .section-heading p {
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 0 5px;
+  }
+
+  .apply-button {
+    margin-top: 20px;
+  }
+
+  .apply-button a {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 15px;
+  }
+}
+
 
 .breakthrough-moment {
   padding: 100px 0;
