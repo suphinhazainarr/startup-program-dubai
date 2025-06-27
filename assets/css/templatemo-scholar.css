@@ -428,7 +428,7 @@ Header Style
 }
 .header-area .main-nav .nav li a.active {
   color: var(--text-color) !important; /* updated from #000000 */ /* DIMOIS update */
-  background-color: rgba(255, 255, 255, 0.10);
+  background-color: rgba(215, 47, 47, 0.1);
   opacity: 1;
 }
 
@@ -465,7 +465,7 @@ Header Style
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #fff;
+  background-color: #a82929;
   display: block;
   position: absolute;
   width: 30px;
@@ -748,7 +748,7 @@ Banner Style
 }
 
 .main-banner .item .buttons .icon-button i {
-  color: #7a6ad8;
+  color: #4228d9;
   background-color: #fff;
   display: inline-block;
   height: 50px;
@@ -781,8 +781,8 @@ Banner Style
   line-height: 50px;
   font-size: 24px;
   display: inline-block;
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.2);
+  color: #a35454;
+  background-color: rgba(45, 32, 32, 0.2);
   border-radius: 50%;
   opacity: 1;
   transition: all .3s;
