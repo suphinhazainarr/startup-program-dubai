@@ -754,14 +754,22 @@ Banner Style
 }
 
 @media (max-width: 767px) {
-  .main-banner .item-2 {
-    background-position: center center;
-    min-height: 80vh; /* Adjust as needed */
+  .main-banner .item {
+    min-height: 100vh; /* Consistent height on mobile */
   }
 
-  .main-banner .item-2 .header-text {
+  .main-banner .item .header-text {
     padding: 0 20px;
     text-align: center;
+  }
+
+  /* OPTIONAL: Improve spacing on small screens */
+  .main-banner .header-text h2 {
+    font-size: 22px;
+  }
+
+  .main-banner .header-text p {
+    font-size: 14px;
   }
 }
 .main-banner .item-3 {
