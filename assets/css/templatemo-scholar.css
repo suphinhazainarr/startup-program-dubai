@@ -1243,7 +1243,6 @@ Facts Style
   color: var(--button-text);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
 }
-
 @media (max-width: 768px) {
   .fun-facts {
     padding: 60px 15px 40px 15px;
@@ -1272,12 +1271,16 @@ Facts Style
   }
 
   .apply-button a {
-    padding: 10px 0;
-    font-size: 14px;
-    width: 100%;
+    padding: 8px 16px;            /* Reduced padding */
+    font-size: 13px;              /* Smaller font size */
+    border-radius: 4px;           /* Slightly smaller corners */
+    width: auto;                  /* Optional: auto width */
     text-align: center;
   }
 }
+
+
+
 
 
 .breakthrough-moment {
@@ -1661,7 +1664,7 @@ Contact Style
 .contact-us .contact-us-content {
   border-radius: 25px;
   padding: 80px;
-  background-color: var(--primary-color);
+  background-color: #FF1A00;
   position: relative;
   z-index: 1;
   color: var(--button-text);
@@ -1724,24 +1727,32 @@ Contact Style
 
 /* BUTTON STYLING */
 #contact-form button {
-  background-color: #5271e1;
+  background-color: #0039FF;
   color: var(--button-text);
   border: none;
   padding: 12px 28px;
   font-size: 16px;
   font-weight: 600;
   border-radius: 25px;
-  transition: background 0.3s ease, transform 0.2s ease;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 6px 0 #02071a8a, 0 8px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 
+/* Hover effect: elevate slightly */
 #contact-form button:hover {
-  background-color: var(--accent-color);
-  color: var(--button-text);
-  transform: scale(1.03);
+  background-color: #1e07ef;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 #02071a8a, 0 8px 15px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
-/* RESPONSIVE TWEAKS */
+/* Active/Click effect: pressed down */
+#contact-form button:active {
+  transform: translateY(2px);
+  box-shadow: 0 4px 0 #002ccc, 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
 @media (max-width: 768px) {
   .contact-us .contact-us-content {
     padding: 40px 20px;
@@ -1760,6 +1771,7 @@ Contact Style
   }
 }
 
+
 /* 
 ---------------------------------------------
 Footer Style
@@ -1769,7 +1781,7 @@ Footer Style
 footer {
   margin-top: 150px;
   position: relative;
-  background-color: var(--primary-color); /* updated from #7a6ad8 */ /* DIMOIS update */
+  background-color: #FF1A00; /* updated from #7a6ad8 */ /* DIMOIS update */
   vertical-align: middle;
   min-height: 150px;
   border-radius: 150px 150px 0px 0px;
