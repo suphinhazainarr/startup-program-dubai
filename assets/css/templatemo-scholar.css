@@ -6,6 +6,18 @@ https://templatemo.com/tm-586-scholar
 
 */
 
+/* === DIMOIS COLOR SYSTEM === */
+:root {
+  --primary-color: #FF1A00; /* DIMOIS Red */
+  --accent-color: #0039FF;  /* DIMOIS Blue */
+  --background-color: #FFFFFF;
+  --text-color: #1A1A1A;
+  --button-bg: #FF1A00;
+  --button-text: #FFFFFF;
+  --link-hover: #0039FF;
+}
+/* === END DIMOIS COLOR SYSTEM === */
+
 /* ---------------------------------------------
 Table of contents
 ------------------------------------------------
@@ -106,7 +118,7 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #1e1e1e;
+  color: var(--text-color);
   margin-top: 0px;
   margin-bottom: 0px;
   font-weight: 700;
@@ -119,7 +131,7 @@ ul {
 p {
   font-size: 14px;
   line-height: 28px;
-  color: #4a4a4a;
+  color: var(--text-color);
 }
 
 img {
@@ -138,13 +150,13 @@ body {
 }
 
 ::selection {
-  background: #7a6ad8;
-  color: #fff;
+  background: var(--accent-color); /* updated from #7a6ad8 */ /* DIMOIS update */
+  color: var(--button-text); /* updated from #fff */ /* DIMOIS update */
 }
 
 ::-moz-selection {
-  background: #7a6ad8;
-  color: #fff;
+  background: var(--accent-color); /* updated from #7a6ad8 */ /* DIMOIS update */
+  color: var(--button-text); /* updated from #fff */ /* DIMOIS update */
 }
 
 .section {
@@ -162,15 +174,16 @@ body {
   text-transform: capitalize;
   margin: 20px 0;
   line-height: 44px;
+  color: var(--text-color); /* updated from #1e1e1e */ /* DIMOIS update */
 }
 
 .section-heading h2 em {
-  color: #7a6ad8;
+  color: var(--accent-color); /* updated from #7a6ad8 */ /* DIMOIS update */
   font-style: normal;
 }
 
 .section-heading h6 {
-  color: #7a6ad8;
+  color: var(--accent-color); /* updated from #7a6ad8 */ /* DIMOIS update */
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 600;
@@ -178,8 +191,8 @@ body {
 
 .main-button a {
   display: inline-block;
-  background-color: #fff;
-  color: #7a6ad8;
+  background-color: var(--button-bg); /* updated from #fff */ /* DIMOIS update */
+  color: var(--button-text); /* updated from #7a6ad8 */ /* DIMOIS update */
   font-size: 14px;
   font-weight: 500;
   height: 40px;
@@ -190,8 +203,8 @@ body {
 }
 
 .main-button a:hover {
-  background-color: #7a6ad8;
-  color: #fff;
+  background-color: var(--accent-color); /* updated from #7a6ad8 */ /* DIMOIS update */
+  color: var(--button-text); /* updated from #fff */ /* DIMOIS update */
 }
 
 /* 
@@ -400,7 +413,7 @@ Header Style
   height: 40px;
   line-height: 40px;
   text-transform: capitalize;
-  color: #000000;
+  color: var(--text-color); /* updated from #000000 */ /* DIMOIS update */
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
@@ -410,12 +423,11 @@ Header Style
 }
 
 .header-area .main-nav .nav li:hover a {
-      color: #000000 !important;
-
+  color: var(--text-color) !important; /* updated from #000000 */ /* DIMOIS update */
   opacity: 0.8;
 }
 .header-area .main-nav .nav li a.active {
-    color: #000000 !important;
+  color: var(--text-color) !important; /* updated from #000000 */ /* DIMOIS update */
   background-color: rgba(255, 255, 255, 0.10);
   opacity: 1;
 }
@@ -439,7 +451,7 @@ Header Style
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #fff;
+  background-color: var(--button-text); /* updated from #fff */ /* DIMOIS update */
   display: block;
   position: absolute;
   width: 30px;
@@ -650,7 +662,7 @@ Banner Style
 */
 
 .main-banner {
-  background-image: url(../images/banner-bg.jpg);
+  background-image: url(../images/SL-120722-54440-04.jpg);
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -861,7 +873,7 @@ Services Style
   display: inline-block;
   text-align: center;
   line-height: 190px;
-  background-color: #7a6ad8;
+  background-color: var(--accent-color); /* updated from #7a6ad8 */ /* DIMOIS update */
   border-radius: 50%;
   position: absolute;
   right: 0;
@@ -894,7 +906,7 @@ Services Style
 .services .service-item .main-content {
   border-radius: 25px;
   padding: 80px 30px 50px 30px;
-  background-color: #f1f0fe;
+  background-color: #F5F7FF; /* updated from #f1f0fe, use a light blue/neutral for contrast */ /* DIMOIS update */
   margin-bottom: 30px;
   margin-right: 80px;
   transition: all 0.4s ease;
@@ -943,7 +955,7 @@ About Style
 .accordion {
   margin-top: -40px;
   margin-bottom: -40px;
-  background-color: #7a6ad8;
+  background-color: var(--accent-color); /* updated from #7a6ad8 */ /* DIMOIS update */
   border-radius: 40px;
   padding: 80px 50px 50px 50px;
 }
@@ -962,8 +974,8 @@ About Style
 }
 
 .accordion-button:not(.collapsed) {
-  color: #7a6ad8;
-  background-color: #fff;
+  color: var(--accent-color); /* updated from #7a6ad8 */ /* DIMOIS update */
+  background-color: var(--background-color); /* updated from #fff */ /* DIMOIS update */
 }
 
 h2.accordion-header button {
@@ -984,8 +996,8 @@ h2.accordion-header button {
   text-align: center;
   line-height: 30px;
   border-radius: 50%;
-  background-color: #7a6ad8;
-  color: #fff;
+  background-color: var(--accent-color); /* updated from #7a6ad8 */ /* DIMOIS update */
+  color: var(--button-text); /* updated from #fff */ /* DIMOIS update */
 }
 
 .accordion-button:not(.collapsed)::after {
@@ -1099,7 +1111,7 @@ Courses Style
   top: 30px;
   font-size: 14px;
   text-transform: uppercase;
-  color: #7a6ad8;
+  color: var(--primary-color); /* updated from #7a6ad8 */ /* DIMOIS update */
   background-color: rgba(250, 250, 250, 0.95);
   padding: 8px 20px;
   border-radius: 25px;
@@ -1149,7 +1161,7 @@ Courses Style
 }
 
 .events_item .down-content span.author {
-  color: #7a6ad8;
+  color: var(--accent-color); /* updated from #7a6ad8 */ /* DIMOIS update */
   font-size: 15px;
   display: inline-block;
   margin-bottom: 6px;
@@ -1159,6 +1171,7 @@ Courses Style
   font-size: 22px;
   font-weight: 600;
   transition: all .3s;
+  color: var(--accent-color); /* updated from #7a6ad8 */ /* DIMOIS update */
 }
 
 .events_item:hover .down-content h4 {
@@ -1213,8 +1226,8 @@ Facts Style
 }
 
 .apply-button a {
-  background-color: #fff;
-  color: #7a6ad8;
+  background-color: var(--button-bg); /* updated from #fff */ /* DIMOIS update */
+  color: var(--button-text); /* updated from #7a6ad8 */ /* DIMOIS update */
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
@@ -1222,8 +1235,8 @@ Facts Style
 }
 
 .apply-button a:hover {
-  background-color: #f1f0fe;
-  color: #5e4dc5;
+  background-color: var(--accent-color); /* updated from #f1f0fe */ /* DIMOIS update */
+  color: var(--button-text); /* updated from #5e4dc5 */ /* DIMOIS update */
 }
 
 
@@ -1383,6 +1396,7 @@ Team Style
   font-weight: 600;
   margin-top: 8px;
   margin-bottom: 15px;
+  color: var(--accent-color); /* updated from #7a6ad8 */ /* DIMOIS update */
 }
 
 .team-member .main-content ul li {
@@ -1392,7 +1406,7 @@ Team Style
 
 .team-member .main-content ul li a {
   background-color: #fff;
-  color: #7a6ad8;
+  color: var(--accent-color); /* updated from #7a6ad8 */ /* DIMOIS update */
   display: inline-block;
   text-align: center;
   line-height: 40px;
@@ -1405,7 +1419,7 @@ Team Style
 
 .team-member .main-content ul li a:hover {
   background-color: #7a6ad8;
-  color: #fff;
+  color: var(--primary-color); /* updated from #fff */ /* DIMOIS update */
 }
 
 
@@ -1454,7 +1468,7 @@ Testimonials Style
 .testimonials .item p {
   font-size: 18px;
   line-height: 40px;
-  color: #fff;
+  color: var(--text-color); /* updated from #fff */ /* DIMOIS update */
   font-style: italic;
   font-weight: 300;
   margin-bottom: 40px;
@@ -1471,11 +1485,11 @@ Testimonials Style
   display: inline-block;
   margin-top: 20px;
   font-size: 15px;
-  color: #fff;
+  color: var(--accent-color); /* updated from #7a6ad8 */ /* DIMOIS update */
 }
 
 .testimonials .item h4 {
-  color: #fff;
+  color: var(--primary-color); /* updated from #7a6ad8 */ /* DIMOIS update */
   font-size: 22px;
   font-weight: 600;
   margin-top: 8px;
@@ -1563,7 +1577,7 @@ Events Style
 .events .item ul li span.category {
   font-size: 14px;
   text-transform: uppercase;
-  color: #7a6ad8;
+  color: var(--accent-color); /* updated from #7a6ad8 */ /* DIMOIS update */
   background-color: #fff;
   padding: 8px 20px;
   border-radius: 25px;
@@ -1575,6 +1589,7 @@ Events Style
 .events .item ul li h4 {
   font-size: 22px;
   font-weight: 600;
+  color: var(--primary-color); /* updated from #7a6ad8 */ /* DIMOIS update */
 }
 
 .events .item ul li span {
@@ -1594,7 +1609,7 @@ Events Style
   position: absolute;
   right: 0;
   top: 22px;
-  background-color: #7a6ad8;
+  background-color: var(--primary-color); /* updated from #7a6ad8 */ /* DIMOIS update */
   width: 60px;
   height: 120px;
   display: inline-block;
@@ -1602,8 +1617,13 @@ Events Style
   line-height: 120px;
   font-size: 18px;
   z-index: 1;
-  color: #fff;
+  color: var(--button-text); /* updated from #fff */ /* DIMOIS update */
   border-radius: 60px 0px 0px 60px;
+}
+
+.events .item a:hover {
+  background-color: var(--accent-color); /* updated from #fff */ /* DIMOIS update */
+  color: var(--button-text); /* DIMOIS update */
 }
 
 
@@ -1746,68 +1766,44 @@ Contact Style
   z-index: 2;
 }
 
-#contact-form input {
-  width: 100%;
-  height: 50px;
-  border-radius: 25px;
-  background-color: rgba(249, 235, 255, 0.15);
-  border: none;
-  outline: none;
-  font-weight: 300;
-  padding: 0px 20px;
-  font-size: 14px;
-  color: #fff;
-  margin-bottom: 30px;
-  position: relative;
-  z-index: 3;
-}
-
-#contact-form input::placeholder {
-  color: #fff;
-}
-
+#contact-form input,
 #contact-form textarea {
-  width: 100%;
-  height: 120px;
-  border-radius: 25px;
-  background-color: rgba(249, 235, 255, 0.15);
-  border: none;
-  outline: none;
-  font-weight: 300;
-  padding: 20px;
-  font-size: 14px;
-  color: #fff;
-  margin-bottom: 30px;
-  position: relative;
-  z-index: 3;
+  background-color: #F5F7FF; /* updated from rgba(249,235,255,0.15) */ /* DIMOIS update */
+  color: var(--text-color); /* updated from #fff */ /* DIMOIS update */
 }
 
+#contact-form input::placeholder,
 #contact-form textarea::placeholder {
-  color: #fff;
+  color: var(--text-color); /* updated from #fff */ /* DIMOIS update */
 }
 
 #contact-form button {
-  border: none;
-  height: 50px;
-  font-size: 14px;
-  font-weight: 600;
-  background-color: #fff;
-  padding: 0px 25px;
-  border-radius: 25px;
-  color: #7a6ad8;
-  transition: all .4s;
-  position: relative;
-  z-index: 3;
+  background-color: var(--button-bg); /* updated from #fff */ /* DIMOIS update */
+  color: var(--button-text); /* updated from #7a6ad8 */ /* DIMOIS update */
 }
 
 #contact-form button:hover {
-  opacity: 0.8;
+  background-color: var(--accent-color); /* DIMOIS update */
+  color: var(--button-text); /* DIMOIS update */
+}
+
+.apply-button a {
+  background-color: var(--button-bg); /* updated from #fff */ /* DIMOIS update */
+  color: var(--button-text); /* updated from #7a6ad8 */ /* DIMOIS update */
+}
+
+.apply-button a:hover {
+  background-color: var(--accent-color); /* updated from #f1f0fe */ /* DIMOIS update */
+  color: var(--button-text); /* updated from #5e4dc5 */ /* DIMOIS update */
+}
+
+a:hover, .main-button a:hover, .apply-button a:hover {
+  color: var(--link-hover); /* DIMOIS update */
 }
 
 .contact-us-content .more-info {
   text-align: center;
-  background: rgb(85,0,227);
-  background: linear-gradient(90deg, rgba(85,0,227,1) 0%, rgba(198,61,255,1) 100%);
+  background: linear-gradient(90deg, var(--primary-color) 0%, var(--accent-color) 100%); /* updated from violet gradient */ /* DIMOIS update */
   border-radius: 0px 0px 23px 23px;
   padding: 45px 30px 15px 30px;
 }
@@ -1824,7 +1820,7 @@ Contact Style
 }
 
 .contact-us-content .more-info h4 a {
-  color: #fff;
+  color: var(--button-text); /* updated from #fff */ /* DIMOIS update */
   font-size: 16px;
   font-weight: 400;
 }
@@ -1838,7 +1834,7 @@ Footer Style
 footer {
   margin-top: 150px;
   position: relative;
-  background-color: #7a6ad8;
+  background-color: var(--primary-color); /* updated from #7a6ad8 */ /* DIMOIS update */
   vertical-align: middle;
   min-height: 150px;
   border-radius: 150px 150px 0px 0px;
@@ -1847,7 +1843,7 @@ footer {
 footer p {
   text-align: center;
   line-height: 150px;
-  color: #fff;
+  color: var(--button-text); /* updated from #fff */ /* DIMOIS update */
   font-weight: 400;
 }
 
