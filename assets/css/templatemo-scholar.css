@@ -787,6 +787,61 @@ Banner Style
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+@media (max-width: 768px) {
+  .main-banner {
+    padding: 100px 0 60px 0;
+  }
+
+  .main-banner .item {
+    padding: 40px 20px;
+    margin-left: 0;
+    border-radius: 20px;
+  }
+
+  .main-banner .item span.category {
+    font-size: 12px;
+    padding: 4px 12px;
+    margin-bottom: 20px;
+  }
+
+  .main-banner .item h2 {
+    font-size: 22px;
+    line-height: 32px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .main-banner .item p {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .main-banner .item .buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+  }
+
+  .main-banner .item .buttons .main-button {
+    margin-right: 0;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .main-banner .item .buttons .main-button a {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px;
+  }
+
+  .main-banner .owl-nav {
+    display: none; /* Optional: hide carousel arrows on mobile */
+  }
+}
+
 
 /* 
 ---------------------------------------------
