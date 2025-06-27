@@ -1057,7 +1057,7 @@ h2.accordion-header button {
     width: 100%;
     text-align: center;
     font-size: 14px;
-    padding: 10px 0;
+    /* padding: 10px 0; */
     background-color: var(--button-bg); /* force same color */
     color: var(--button-text);
   }
