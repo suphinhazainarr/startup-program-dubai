@@ -92,12 +92,20 @@
 
 
 	// Menu Dropdown Toggle
-	if($('.menu-trigger').length){
-		$(".menu-trigger").on('click', function() {	
-			$(this).toggleClass('active');
-			$('.header-area .nav').slideToggle(200);
-		});
-	}
+if ($('.menu-trigger').length) {
+  $(".menu-trigger").on('click', function () {
+    $(this).toggleClass('active');
+    $('.header-area .nav').toggleClass('open');
+  });
+
+  // Fix: Close nav on link click
+  $('.header-area .nav li a').on('click', function () {
+    if ($(window).width() < 768) {
+      $('.header-area .nav').removeClass('open');
+      $('.menu-trigger').removeClass('active');
+    }
+  });
+}
 
 
 	// Menu elevator animation
