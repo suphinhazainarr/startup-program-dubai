@@ -753,6 +753,17 @@ Banner Style
   background-image: url(../images/banner-item-02.jpg);
 }
 
+@media (max-width: 767px) {
+  .main-banner .item-2 {
+    background-position: center center;
+    min-height: 80vh; /* Adjust as needed */
+  }
+
+  .main-banner .item-2 .header-text {
+    padding: 0 20px;
+    text-align: center;
+  }
+}
 .main-banner .item-3 {
   background-image: url(../images/pexels-evonics-1473673.jpg);
 }
