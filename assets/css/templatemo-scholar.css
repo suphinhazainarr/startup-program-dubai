@@ -428,7 +428,6 @@ Header Style
 }
 .header-area .main-nav .nav li a.active {
   color: var(--text-color) !important; /* updated from #000000 */ /* DIMOIS update */
-  background-color: rgba(215, 47, 47, 0.1);
   opacity: 1;
 }
 
@@ -694,7 +693,6 @@ Header Style
     background: none;
     text-align: left;
     padding: 12px 24px;
-    border-bottom: 1px solid #eee;
     transition: background 0.3s ease;
   }
 
@@ -712,14 +710,14 @@ Header Style
     transition: all 0.3s ease;
   }
 
-  .header-area .main-nav .nav li:hover {
+  /* .header-area .main-nav .nav li:hover {
     background-color: rgba(220, 62, 62, 0.08);
   }
 
   .header-area .main-nav .nav li a:hover {
     color: #dc3e3e !important;
     background-color: rgba(220, 62, 62, 0.1);
-  }
+  } */
 }
 
 /* 
