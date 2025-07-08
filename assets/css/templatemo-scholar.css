@@ -2143,3 +2143,48 @@ body {
     width: 95%;
   }
 }
+
+
+
+/* behind the scene */
+
+
+.card-title {
+  color: #3258e0;
+}
+.card-img-top {
+  height: 240px;
+  object-fit: cover;
+}
+.card-body p {
+  font-size: 0.9rem;
+}
+
+
+  .expert-card .card {
+    border: none;
+    border-radius: 1.5rem;
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.075);
+    transition: transform 0.3s ease;
+  }
+
+  .expert-card .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .expert-card .card-img-top {
+    height: 260px;
+    object-fit: cover;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+  }
+
+  .expert-card .card-title {
+    color: #3258e0; /* Blue */
+    font-weight: 600;
+  }
+
+  .expert-card .card-text {
+    font-size: 0.9rem;
+    color: #555;
+  }
