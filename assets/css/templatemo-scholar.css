@@ -1039,10 +1039,13 @@ About Style
 .accordion {
   margin-top: -40px;
   margin-bottom: -40px;
-  background-color: var(--accent-color); /* updated from #7a6ad8 */ /* DIMOIS update */
+  background: url(../images/pexels-karolina-grabowska-6345301.jpg) no-repeat center center;
+  background-size: 120%; /* Zoom out and show full image */
+  background-color: #f9f9f9; /* Optional: fallback color behind transparent areas */
   border-radius: 40px;
   padding: 80px 50px 50px 50px;
 }
+
 
 .accordion-item {
   background-color: #fff;
@@ -1297,19 +1300,27 @@ Facts Style
   width: 95%;
   height: 100%;
   background-color: #3258e0;
+
+  background-image: url(../images/pexels-rdne-7713165.jpg);
+  background-size: 150%; /* Zoomed out (smaller than cover) */
+  background-repeat: no-repeat;
+  background-position: center center;
+
   content: '';
   border-top-right-radius: 500px;
   border-bottom-right-radius: 500px;
 }
 
 .fun-facts:after {
-  background: url(../images/contact-dec-01.png);
+  /* background: url(../images/pexels-rdne-7713165.jpg); */
+  background-size: contain;
+  background-repeat: no-repeat;
   position: absolute;
   left: 15%;
   opacity: 0.4;
   top: 0;
-  width: 318px;
-  height: 119px;
+  width: 240px; /* smaller */
+  height: 100px; /* smaller */
   content: '';
   z-index: 2;
 }
